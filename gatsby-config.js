@@ -4,10 +4,10 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Sane-Gatsby Tinderbox`,
-    description: `Boilerplate for Sanity + Gatsby`,
-    author: `Lane Le Prevost-Smith`,
-    siteUrl: 'http://example.com',
+    title: `Coolie Cut Cane`,
+    description: `Coolie Cut Cane Online Essay`,
+    author: `The Bad Fiji GYals`,
+    siteUrl: 'https://example.com',
   },
   plugins: [
     {
@@ -15,7 +15,7 @@ module.exports = {
       options: {
         projectId: process.env.SANITY_PROJECT_ID,
         dataset: process.env.SANITY_DATASET,
-        // token: process.env.SANITY_TOKEN,
+        token: process.env.SANITY_TOKEN,
         watchMode: true,
       },
     },
