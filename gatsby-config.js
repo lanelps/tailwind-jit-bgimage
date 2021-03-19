@@ -10,6 +10,9 @@ module.exports = {
     siteUrl: 'https://example.com',
   },
   plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: 'gatsby-source-sanity',
       options: {
@@ -19,8 +22,6 @@ module.exports = {
         watchMode: true,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -29,5 +30,6 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-postcss`
   ],
 }
