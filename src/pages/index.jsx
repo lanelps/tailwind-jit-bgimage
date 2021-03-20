@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 const Home = () => {
   return (
     <Layout title="Home" page="home" url="/">
-      <h1>Coolie Cut Cane</h1>
+      <h1 className="font-times text-base">Coolie Cut Cane</h1>
     </Layout>
   );
 };

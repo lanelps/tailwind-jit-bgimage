@@ -12,6 +12,22 @@ module.exports = {
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [
+          require(`tailwindcss`),
+          require(`autoprefixer`)
+        ],
+      }
+    },
+    { 
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `fonts`,
+        path: `${__dirname}/src/assets/fonts/`
+      }
+    },
     `gatsby-transformer-sharp`,
     {
       resolve: 'gatsby-source-sanity',
@@ -30,6 +46,5 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-postcss`
   ],
 }
