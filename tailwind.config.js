@@ -5,29 +5,40 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
     colors: {
       transparent: `transparent`,
       current: `currentColor`,
       black: `#000`,
-      white: `#FFF`
+      white: `#FFF`,
+      gold: `#D5A945`,
+      blue: `#E3F2F3`,
+      brown: `#53251A`
     },
     screens: {
-      xxs: `320px` ,
-      xs: `428px`,
-      sm: `768px` ,
-      md: `1024px` ,
-      lg: `1440px` ,
-      xl: `1920px`
+      xs: `320px` ,
+      sm: `428px`,
+      md: `768px` ,
+      lg: `1024px` ,
+      xl: `1441px`
     },
     fontFamily: {
       times: [`TimesSansSerif`],
       house: [`HouseScript`, `cursive`]
     },
-    // fontSize: {sm: ['14px', '20px']}
+    fontSize: {
+      d1: [`86.6px`, `1.2`],
+      h1: [`53.3px`, `1.2`],
+      h2: [`37.3px`, `1.2`],
+      b1: [`17.3px`, `1.2`]
+    },
+    extend: {
+      backgroundImage: theme => ({
+        'cane-pattern': "url('../assets/images/cane-pattern.png')"
+      })
+    }
   },
   variants: {
-    extend: {},
+    extend: {}
   },
   plugins: [],
 }
