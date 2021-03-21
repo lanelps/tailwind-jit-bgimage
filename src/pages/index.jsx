@@ -8,14 +8,12 @@ const Home = () => {
       <section className="w-full h-screen bg-gold bg-cane-pattern">
         <article className="grid-main h-full py-8 md:py-16">
           <div className="col-span-full md:col-start-2 md:col-end-12 flex flex-col items-center justify-evenly px-4 py-4 bg-blue">
-            <h1 className="font-house text-d1 text-brown text-center">
-              Coolie Cut Cane:
-            </h1>
+            <h1 className="font-house text-d1 text-brown text-center">Test</h1>
             <h2 className="font-house text-h2 text-brown text-center">
-              The Sugar Empire of the South Pacific
+              Test test
             </h2>
             <h3 className="font-house text-b1 text-brown">
-              Esha Pillay & Quishile Charan
+              Lane Le Prevost-Smith
             </h3>
           </div>
         </article>
