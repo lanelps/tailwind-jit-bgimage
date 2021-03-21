@@ -1,5 +1,3 @@
-@tailwind base;
-@tailwind components;
 @font-face {
   font-family: "TimesSansSerif";
   src: url("../assets/fonts/TimesSansSerif.ttf") format("truetype");
@@ -15,4 +13,46 @@
   font-weight: bold;
   font-style: normal;
 }
+@tailwind base;
+@tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .grid-main {
+    margin: auto;
+    width: calc(100% - 13.8vw);
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    grid-gap: 2.22vw;
+  }
+
+  @screen sm {
+    .grid-main {
+      width: calc(100% - 13.6vw);
+      grid-gap: 2.33vw;
+    }
+  }
+
+  @screen md {
+    .grid-main {
+      width: calc(100% - 15.1vw);
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      grid-gap: 2.21vw;
+    }
+  }
+
+  @screen lg {
+    .grid-main {
+      width: calc(100% - 15vw);
+      grid-gap: 2.22vw;
+    }
+  }
+
+  @screen xl {
+    .grid-main {
+      width: calc(100% - 390.24px);
+      max-width: 1049.76px;
+      grid-gap: 32px;
+    }
+  }
+}
